@@ -1,0 +1,9 @@
+body {
+    background-image: url(img/dragon-ball-z-4k-pc-axpvihiowkabrq42.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contenedor {
+    margin: 0 auto;
+    width: 50%;
+}
