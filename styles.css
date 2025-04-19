@@ -1,20 +1,30 @@
+
 body { 
     background-image: url(img/dragon-ball-z-4k-pc-axpvihiowkabrq42.jpg);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 95%;
     background-attachment: fixed;
+    background-color: rgba(3, 1, 15, 1);
+    letter-spacing: 1px;
+    font-family: "National Park", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .contenedor {
     margin: 0 auto;
     margin-top: 5vh;
     width: 50vw;
     height: 420vh;
-    font-size: 10px;
+    padding: 0.1rem; 
+    font-size: 10px; 
 }
 
 img {
-    width: 70%;
+    max-width: 70%;
     height: 80%;
+    object-fit: contain;
 }
 .correcion_size {
     width: 40%;
@@ -22,13 +32,66 @@ img {
 }
 
 .tamaño_cards { 
-    margin: 0.4em;
+    margin: 0.4em; /* EM es tambien una medida relativa, funciona como REM pero a diferencia de tener de referencia la fuente riza
+    tiene de referencia el tamaño de fuente del padre, (font-size: 10px) entonces 1em = 10px */
     padding: 0.8em;
     width: 23%;
     height: 6.8%;
     box-sizing: border-box;
     background-color: white;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 5px; /* PX es una medida absoluta que siempre equivale un 1 pixel de la pantalla */
     text-align: center;
+    font-size: 0.6rem; /* REM es una medida relativa que adquiere su tamaño repecto a el tamaño de fuente raiz del navegador
+    si este no se cambia la referencia siempre sera de 1rem = 16px */
+    
+}
+
+[class*="hexadecimal"] {
+    background-color: #d5f126;
+}
+
+[class*="beerus"] {
+    background-color: rgb(146, 99, 192);
+}
+
+[class*="celula"] {
+    background-color: rgb(104, 161, 83);
+}
+
+[class*="force"] {
+    background-color: rgb(212, 159, 255);
+}
+
+[class*="satan"] {
+    background-color: rgb(176, 17, 17);
+}
+
+[class*="picolo"] {
+    background-color: rgb(7, 137, 6);
+}
+
+[class*="lineal"] {
+    background: linear-gradient(to right,  #64bee8, #e864d8 );
+}
+
+[class*="radial"] {
+    background: radial-gradient(#ffffff ,#7502f6 );
+}
+
+[class*="textos"] {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 5px black;
+}
+
+[class*="fuentes"] {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.redimensionamiento {
+    max-width: 122px;
+    height: auto;
 }
