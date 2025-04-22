@@ -22,10 +22,11 @@ body {
 }
 
 img {
-    max-width: 70%;
     height: 80%;
+    max-width: auto;
     object-fit: contain;
 }
+
 .correcion_size {
     width: 40%;
     height: 80%;
@@ -89,9 +90,4 @@ img {
     font-size: 15px;
     font-style: italic;
     font-weight: bold;
-}
-
-.redimensionamiento {
-    max-width: 122px;
-    height: auto;
 }
